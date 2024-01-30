@@ -3,7 +3,7 @@ import java.util.Scanner;
 public class Calculator {
     public static void main(String[] args) {
         System.out.println("Taking input from the user......");
-        Scanner sc=new Scanner(System.in);
+        Scanner sc = new Scanner(System.in);
         System.out.println("Enter the first number: ");
         float num1 = sc.nextFloat();
         System.out.println("Enter the second number: ");
@@ -17,24 +17,20 @@ public class Calculator {
 
         int input = sc.nextInt();
         switch (input) {
-            case 1 -> {
-                System.out.println("Adding these numbers.....");
-                System.out.println(num1 + num2);
-            }
-            case 2 -> {
-                System.out.println("Subtracting these numbers.....");
-                System.out.println(num1 - num2);
-            }
-            case 3 -> {
-                System.out.println("Multiplying these numbers.....");
-                System.out.println(num1 * num2);
-            }
-            case 4 -> {
-                System.out.println("Dividing these numbers.....");
-                System.out.println(num1 / num2);
-            }
-            default -> System.out.println("Invalid input!");
+            case 1: System.out.println("Adding these numbers.....");
+                    System.out.println(num1 + num2);
+                    break;
+            case 2: System.out.println("Subtracting these numbers.....");
+                    System.out.println(num1 - num2);
+                    break;
+            case 3: System.out.println("Multiplying these numbers.....");
+                    System.out.println(num1 * num2);
+                    break;
+            case 4: System.out.println("Dividing these numbers.....");
+                    System.out.println(num1 / num2);
+                    break;
+            default:
+            System.out.println("Invalid input!");
         }
-
     }
 }

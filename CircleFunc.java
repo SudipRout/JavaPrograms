@@ -8,10 +8,16 @@ public class CircleFunc {
         double r = sc.nextInt();
 
         printCircumference(r);
+        printArea(r);
     }
     public static void printCircumference(double r){
-        final double PI = 3.14159;
+        final double PI = 3.14;
         double Circumference = (2 * PI * r);
         System.out.println("The Circumference of the circle is: "+Circumference);
+    }
+    public static void printArea(double r){
+        final double PI = 3.14;
+        double Area = PI * (r*r);
+        System.out.println("The Area of the circle is: "+Area);
     }
 }
