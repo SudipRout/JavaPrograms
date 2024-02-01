@@ -1,5 +1,4 @@
 //To print a factorial of a number using function
-
 import java.util.Scanner;
 public class Factorial_Func {
     public static void printFactorial(int n){
